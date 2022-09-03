@@ -1,0 +1,36 @@
+
+<h3 class="text-center">Students Table</h3>
+<div class="container main my-4 p-4">
+    <table class="table table-bordered">
+        <thead>
+          <tr class="table-danger">
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Father's Name</th>
+            <th scope="col">Course</th>
+            <th scope="col">Roll No.</th>
+            <th scope="col">Section</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of arrayValue; let i=index" class="table-info">
+            <th scope="row">{{i+1}}.</th>
+            <td>{{item.firstname | uppercase}}</td>
+            <td>{{item.lastname | uppercase}}</td>
+            <td>{{item.fathersname}}</td>
+            <td>{{item.course}}</td>
+            <td>{{item.rollno}}</td>
+            <td>{{item.section}}</td>
+            <td><dl *ngFor="let items of item.subject">
+                <dt>{{items.subjectname}}</dt>
+                <dd> - {{items.bookname}}</dd>
+            </dl></td>
+            <td><button *ngIf="item.id>1" class="btn btn-danger mt-3" (click)="deleteData(item.id)">remove</button></td>
+          </tr>
+         
+        </tbody>
+      </table>
+</div>

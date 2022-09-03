@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "course": "MCA",
+      "fathersname": "Mr. Smith",
+      "firstname": "John",
+      "lastname": "Snow",
+      "rollno": "954456677",
+      "section": "A",
+      "subject": [
+        {
+          "bookname": "Let us c",
+          "language": "English",
+          "subjectname": "C language"
+        }
+      ]
+    },
+    {
+      "firstname": "Udit ",
+      "lastname": "Tyagi",
+      "fathersname": "mr. anil tyagi",
+      "course": "MCA",
+      "section": "A",
+      "rollno": "323434434",
+      "subject": [
+        {
+          "subjectname": "java",
+          "language": "engish",
+          "bookname": "oops concept"
+        },
+        {
+          "subjectname": "C++ ",
+          "language": "engish",
+          "bookname": "C++ "
+        }
+      ],
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
